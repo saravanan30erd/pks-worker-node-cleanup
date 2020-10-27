@@ -1,6 +1,6 @@
 # pks-worker-cleanup
 
-## Clean the docker images in PKS worker nodes
+## Clean the unused docker images in PKS worker nodes
 
 Log into the Jump server,
 
@@ -11,10 +11,10 @@ Log into the Jump server,
 
 2. Run the script with deployment ID
 ```
-    chmod +x worker-cleanup.exp
-    ./worker-cleanup.exp <deployment ID>
-    
+    chmod +x worker-cleanup.sh
+    ./worker-cleanup.sh <deployment ID>
+
     Example:
-    
-    ./worker-cleanup.exp service-instance_52b6de9a-f7g6-34rf-4g5h-5b981ec04207
+
+    ./worker-cleanup.sh service-instance_52b6de9a-f7g6-34rf-4g5h-5b981ec04207
 ```
